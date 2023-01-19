@@ -1,0 +1,5 @@
+inventory :
+   inventory is a nothing but you can store your purchse items in one location in inventory we have multiple warehouses...
+
+
+

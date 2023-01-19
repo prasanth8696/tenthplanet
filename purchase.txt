@@ -1,0 +1,60 @@
+purchase :
+   purchase module helps to manage to track purchase agrements,quatation,purchas orders
+ 
+
+ => dont run out of stock with recording rules :
+     * if your inventory run out of stock odoo will automatically replenish your
+       stocks... with help of recording rules...
+
+     * if you want use recording rules you must install invetory app in odoo
+
+     * before recording rules you must add vendors in purchase tab ,recording rules always choose first vendor initially
+ 
+     * in recording rules you must set min quantity for place purchase order(po) 
+
+     * if you have only one vendor, recording rules doesnt satisfy min quantity 
+       then recording rules will go to next vendor if vendor not available recording rules doesnt work
+       you czan add one vendor in different min quantites
+
+     * select routes in invetory section if you purchase in with in the purchase app
+       routes is set to by "buy" default ,if you want dropship select "dropship" option
+
+     * MINIMUM QUANTITY :
+         if you set  min quantity whenever your stocks down below the min quantity
+          odoo will fill your stocks upto min quantity
+
+     * MAXIMUM QUANTITY :
+          if you set  min quantity whenever your stocks down below the min quant>
+          odoo will fill your stocks upto maximum quantity
+
+
+     * just you need to buy based on sales order quantity just set min and max quantity to zero(0)
+       then odoo will only replenish needed stock only...
+
+     * QUANTITY MULTIPLE :
+        doubt...
+
+
+ => purchase in different units of measure than sales :
+
+      it is used for size conversion
+      * for example,
+           1. You purchase orange juice from an American vendor, and they use gallons. However, your customers are European and use liters.
+           
+           2. You buy curtains from a vendor in the form of rolls and you sell pieces of the rolls to your customers using square meters.
+
+       * so you need to set unit of measure in general information tab in purchase app (you can set both sales and purchase app)
+         set unit measure in litre (consider first ex ) and purchase unit measure in gallons...
+
+
+ => managing deals :
+      1) purchase agreements :
+       odoo  provide 2 agreements...
+
+           1) blanket agreements...
+           2) calls for tenders...
+           
+           1) it is used for long term agreements to vendor company... it is used for regular products ,beacuse it is simplify th 
+              purchase complexicity...(it is used for particular company...)
+           
+           2) second type will get request from  multiple vendors and choose best quattation... 

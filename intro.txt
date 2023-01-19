@@ -1,0 +1,23 @@
+what is ERP : => Enterprice Resource Planning...
+
+ERP is refer to type of softwere it is used for manage and automate the day to day buisness activities...
+
+n number softwere available in the market wxample odoo,compeire and etc...
+
+
+odoo : 
+    odoo is a open source softwere written in python and very light weight offer completely from both frontend and backend... 
+
+
+    founder =>>> Fabian pinckaers..
+    started in 2005  name =>> tinyERP and name was changed to openERP  after three(3) yrs and in 2014 name was changed  to "odoo"
+
+
+
+
+     two versions are available 
+            1) community version
+            2) enterprise application...
+
+  use case :
+    it is majorly used in puchasing,manufacturing,inventory,accounting and etc... 
