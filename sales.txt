@@ -34,3 +34,11 @@ sales :
             size,color =>> attributes =>>> class attributes 
             red,s =>>> values =>>> attributes values
             t-shirt,res,s =>>> varient  =>>> t-shirt objects
+
+  4) ebay connector : 
+     doubt...
+  5) amazon connector :
+     doubt...
+
+
+
