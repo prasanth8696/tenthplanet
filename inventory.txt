@@ -2,4 +2,62 @@ inventory :
    inventory is a nothing but you can store your purchse items in one location in inventory we have multiple warehouses...
 
 
+   in odoo inventory app have 2 module:
+     1) warehouse mangement system...
+     2) advanced barcode app...
 
+
+   1) warehouse management system...
+      1)products
+        *) unit of measure => like in purchase app we have unit of measure in warehouse management beacuse here only all all 
+           the products will deliver to customer or retailers...
+
+        *) replenishment strategy :
+            2 types :
+               1) recording rules...
+               2) make to order(MTO)
+               
+               1) in recording rules it will automatically generate the PO/MO  whenever stock will go down min quantity
+                  fill upto maximum quantity (NOTE : order not confirmed...)
+
+               2) in MTO whenever sales order is confirmed only po/mo draft is generated
+
+
+
+        2) warehouses :
+              warehouse means it is contain your stocks..
+  
+              location :
+                 it is the specific part of the one warehouse... you cannot link multiple warehouse in one locaion 
+                 in odoo yo can create n number of location for one warehouse
+            
+              3 types location :
+                  1) physical locations
+                      it is the internal part of the warehouse that company owns...
+                  2) partner location 
+                      it is same as physical locations but owned not owned by user company...
+
+                  3) virtual locations...
+                     doubt...
+
+
+                =>> in odoo locations are stored in tree structure...
+
+         3) inventory adjustments...
+                count of recorded items always doesnt match actual counts in the warehouse items ,so inventory adjustments needs rectify that...
+
+
+              The Inventory Adjustments page shows all products that are currently in stock. Each line contains the following information:
+
+                Product
+
+                Lot/Serial Number
+
+                On Hand Quantity
+
+
+            4) cycle counts...
+
+               In most companies, the stock is only counted once a year. That’s why by default, after making an inventory adjustment in Odoo, 
+               the scheduled date for the next count is set on the 31st of December. However, for some businesses
+               it’s crucial to have an accurate inventory count at all times.

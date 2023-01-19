@@ -3,3 +3,6 @@ day 1 =>>> 20-jan-23
  1) what is ERP
  2) what is odoo and its history
  3) purchase
+ 4) inventory
+ 5) CRM(...)
+ 6) sales(...)

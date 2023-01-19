@@ -1,0 +1,36 @@
+sales :
+  
+ 1) send quatations : 
+     1) Quatation template :
+        it is used for send quatation to customer.use of custom template saves lots of time so you can easily send quatationquickly...
+  
+     2) addtional product :
+         The use of optional products is a marketing strategy for cross-selling products along with a core product. 
+         The aim is to offer useful and related products to your customers. For instance, if a customer wants to buy a car, 
+         he has the choice to order an automatic opening trunk and massaging seats, or not to order such high-quality products and simply 
+         buy his car.
+
+      3) use quotations expiry date to stimulate your customers :
+          set expiry date for so quotations is a bast practice beacuse user will afraid loose good deal so we will get better profit...
+
+
+ 2) invoice methods : 
+      1) invoice what is ordered : 
+            it means invoice will generate once sales order is confirmed (default mode in odoo...)
+      2) invoice what is ordered : 
+             it means invoice will generate once items are delivered...
+      3) down payment :
+             its like pay in advance some money after that you can pay later...
+              1) down payment(percentage)
+              2) down payment(fixed amt)
+
+
+
+  3) product prizes and varients :
+       1) varients : 
+            example =>>> t-shirt is a product =>> like a class
+            size = S,M,L,XL,XXL
+            color = red,blue,green 
+            size,color =>> attributes =>>> class attributes 
+            red,s =>>> values =>>> attributes values
+            t-shirt,res,s =>>> varient  =>>> t-shirt objects
