@@ -57,4 +57,22 @@ purchase :
            1) it is used for long term agreements to vendor company... it is used for regular products ,beacuse it is simplify th 
               purchase complexicity...(it is used for particular company...)
            
-           2) second type will get request from  multiple vendors and choose best quattation... 
+           2) second type will get request from  multiple vendors and choose best quotation... 
+
+
+
+  =>>> RFQ => request for quoatation 
+
+
+
+
+
+
+
+
+
+
+
+
+
+

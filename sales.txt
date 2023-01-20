@@ -17,7 +17,7 @@ sales :
  2) invoice methods : 
       1) invoice what is ordered : 
             it means invoice will generate once sales order is confirmed (default mode in odoo...)
-      2) invoice what is ordered : 
+      2) invoice what is delivered : 
              it means invoice will generate once items are delivered...
       3) down payment :
              its like pay in advance some money after that you can pay later...
