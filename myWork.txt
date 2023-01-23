@@ -1,16 +1,18 @@
 day 1 =>>> 19-jan-23
 ----------------------
 
- 1) what is ERP
- 2) what is odoo and its history
- 3) purchase
- 4) inventory
- 5) CRM(...)
- 6) sales
+ 1) what is ERP(theory)
+ 2) what is odoo and its history(theory)
+ 3) purchase(theory)
+ 4) inventory (pending =>>> working with odoo )
+ 5) CRM(theory) (some doubts) 
+ 6) sales(theory)
 
 
 day 2 =>>> 20-jan-23 (using run bot...)
----------------------
- 1) purchase module in odoo 16
- 2) sales module in odoo 16
- 3) ...loading
+----------------------------------------
+ 1) purchase module =>>> in odoo 16...
+ 2) sales module =>>> in odoo 16...
+ 3) CRM module =>>> in odoo 16... 
+ 4) points of sale (theory)
+ 5) POS module =>>> in odoo 16...

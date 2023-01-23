@@ -1,0 +1,58 @@
+bill of materials :
+   it is a document that contain how many quantity of each components required to deliver the finished product...
+
+   * you can create multiple bom for one product
+
+
+   * you can create bom for each product varients.... use this feature go to inventory and >>>> config >>> settings >>>>enable  variants
+
+   * semi finished products :
+      it is a manufatured product used in another product bill of materials to reduce complex bom structure...
+
+   * PRODUCT =>>> TOP LEVEL PRODUCT , first create the semi finished product and add in top level product BOM...
+   
+   * kit =>>> doubt  
+  
+   * trigger automatic manufacturing for semi finshed product in two ways...
+      1) recording rules(recomended) like in purchase
+         set min and max quantity equal to zero(0) therefore whenever top level product  manufaturing order is posted semi finished mo also posted
+         NOTE : semi finished product must be finished before manufacturing can begin on the top-level product.
+
+
+      2)  
+
+
+    * quality control :
+        * it is mainly used for quality product,reduce risks,increase trust among customers and company reputation
+ 
+        doubt
+
+
+    work centers :
+     you cannot create multiple product in one centers so you can use multiple work centers but you cant manage which one is free, or 
+     which one is busy in real time but in odoo you can control easily...
+
+
+    draft >>> confirmed >>> in progress >>> in close >>> done   
+
+    draft =>>> before confirm state
+    confirmed =>>> once mo is confirmed
+    in progress =>>>  production in progress
+    in close =>>> after production 
+    done =>>> after mark as done confirmation
+
+
+
+   work center work flow :
+    waiting for component(in not available) =>>> waiting for wo(if it is not the first operation ) =>>> ready =>>> in progress =>>> done
+
+    waiting for component =>>> if componets not available in inventory
+    waiting for wo =>>> if any process is pending...
+    ready =>>> once all of the pre requests satisfied =>>> ready state(start the production)
+    in progress =>>> in production
+    in close =>>> after production 
+    done =>>> final validate...  
+
+
+
+

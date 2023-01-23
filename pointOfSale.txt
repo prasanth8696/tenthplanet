@@ -1,0 +1,48 @@
+POS =>>> point of sale
+
+    it is a fully integrated application woriking completely in online or offline. It also automatically registers 
+    product moves in your stock, gives you real-time statistics, and consolidations across all shops.
+
+   =>>>  here you can use multiple sessions or one sessio with multiple employees so you can easily maintain your shop or bar buisness activites
+         using this pos module
+
+
+
+    REFUND :
+       After payment  you want refund for some product you can use refund method in odoo 
+       steps :
+        1) start a session from the POS dashboard;
+
+        2) click Refund and select the corresponding order;
+
+        3)  select the product and the quantity to refund using the keypad;
+
+        4) click Refund to go back to the previous screen;
+
+        5) once the order is completed, click Payment to proceed to the refund;
+
+        6) click Validate
+  
+
+  =>>> orders :
+        here you can see your all orders(all shops and bars or anything...)
+
+  =>>> payments :
+        here you can see all customers payment mode and other details...
+        * if you want another payment method simply go >>> configuration >>> payment methods >>> add new payment method , EX : >>> phonepe,gpay,netbanking
+
+  =>>> products :
+         same as in purchase app and sales app...
+
+  =>>> sessions : 
+         here you can see how many sessions are currently opened and (opened and closed)
+
+  =>>> configuration :
+         normally settings and other configuration functions available in that section
+ 
+  =>>> reporting :
+         here you can generate the report of daily orders and sales between specifyed dates...
+
+
+
+
