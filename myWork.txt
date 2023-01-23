@@ -1,4 +1,4 @@
-day 1 =>>> 19-jan-23
+=>>> 19-jan-23
 ----------------------
 
  1) what is ERP(theory)
@@ -9,10 +9,15 @@ day 1 =>>> 19-jan-23
  6) sales(theory)
 
 
-day 2 =>>> 20-jan-23 (using run bot...)
+=>>> 20-jan-23 (using run bot...)
 ----------------------------------------
  1) purchase module =>>> in odoo 16...
  2) sales module =>>> in odoo 16...
  3) CRM module =>>> in odoo 16... 
  4) points of sale (theory)
  5) POS module =>>> in odoo 16...
+
+=>>> 23-jan-23
+--------------------------------------
+1) manufaturing module
+2) manufacuring module working with odoo

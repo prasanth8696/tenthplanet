@@ -42,3 +42,20 @@ sales :
 
 
 
+quoatation =>>> quoatation sent =>>> sales order =>>> to invoice 
+-------------------------------------------------
+quoatation =>>> create the quatation...
+
+quoatation sent =>>> send to customer...
+
+sales order =>>> quoatation once confirmed...
+
+to inoice =>>> to invoice orders
+
+receive payments =>>> customer to you (B2C => buisness to customer)
+
+
+
+
+
+

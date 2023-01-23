@@ -59,16 +59,23 @@ purchase :
            
            2) second type will get request from  multiple vendors and choose best quotation... 
 
+what is the purpose of invoice :
+
+  An invoice is an invaluable tool for accounting. It helps both the seller and the buyer to keep track of their payments and amounts owed.
+
 
 
   =>>> RFQ => request for quoatation 
 
+  rfg =>>> req sent =>>> purchase order =>>> locked(if you enable in settings once you confirm the order you cannot undo)  
+  rfq state =>>> before confirm
+  rfg sent =>>> after confirm
+  purchase order=>>> once confirm the order...
+  locked =>>> 
 
+  you requiremnets is 100 quantity but you get only 50 quantity in validatation you can apply back order 
 
-
-
-
-
+ 
 
 
 
