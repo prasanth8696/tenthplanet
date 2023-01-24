@@ -1,0 +1,34 @@
+ODOO CODING STANDARDS
+---------------------
+NOTE: Don't go for Customization until and unless no option is available (Configuration, Third party modules, OCA Modules, Other Projects customized modules,...etc)
+
+1. Proper Module Name - based on the Feature
+2. Proper Module details (description, version, category,dependencies....etc) - based on the Feature
+3. Proper Module Structure, Folder names (Models, views, data, security,....etc)
+4. Proper File names (Python, XML, CSS, JS)
+5. Proper Imports - Unwanted import verification
+6. Proper Class Names, Table name, Inherits, order by, description
+7. Proper Field names (Attributes --> readonly, store, tracking, domain, help, compute functions, default value,....etc)
+8. Proper Constraints (Proper field dependencies)
+9. Onchange functions (Definition, Methods) with Proper field dependencies
+10. Compute functions with Proper field dependencies
+11. Call the Parent function with super key word
+12. Don't override any function (Unless and until no option)
+13. Write function based on feature, code re-usability
+14. Validation in Create Function - Before calling Super
+15. Use proper Validation Class, ex : UserError, UserWarning, ValidationError,AccessError,...etc
+16. Try to create a new module with proper workflow
+17. Try to avoid Hard codes in conditions, any other places
+18. Create/define a separate module in case of common feature for more than one module
+19. Don't Change any Third party module (if any change required then extended as a new module)
+20. Don't override existing Reports - create a new report
+21. Any model ACL is mandatory (based on the behavior Read, Write, Create, Delete)
+22. Security groups mandatory based on Module (Masters, Reports, Transactions, Approvals, Views)
+23. Proper Definition/Function/Method names
+24. Before start the Day (or) commit the code Pull it and then continue
+25. Code commit with Proper descriptions
+26. Comments are mandatory for new Definition, conditions,......etc
+27. No hard code for Decimal Accuracy (Report, Screen, code all must be same)
+28. Try to Provide the most of the Filters with Optional while generate Reports
+29. Try to Provide the most of the Filters, Group by, Search Options while generate new forms
+30. Many2many, One2many fields with proper relational table and relational fields
