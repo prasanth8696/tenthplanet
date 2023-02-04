@@ -1,0 +1,107 @@
+module 8 :
+ 1) why menuitem not shown in the ui????
+    ans : in odoo security is very important so you must give access rights to your model as well as your menus also . check the ir.model.access.csv 
+         file make sure that model hava proper rights..(very important =>>> ir.model.access.csv id must be unique...)
+
+    extra link : https://www.odoo.com/forum/help-1/menu-item-is-not-showing-in-existing-module-120971 
+
+
+ 2) external Id not found in the system???? 
+    Ans : it is the one type of exception. xml files and other data files are loaded sequentily so you must load in the proper way.
+          ex : car model depend on driver you first load the driver files then load the car miles..
+
+
+
+ 3) cannot access the module by admin but super user can...???? :
+    ans : add your ir.model.access.csv file ti __manifest__ file...
+
+
+ 4) self recordset 
+
+
+ 5) inverse computation doesnt invoke???? ===>>> solved....
+     mistake : 1) create_date is datetime format but our dead line format  is date format
+               2) you cannot convert datetime format to boolean so cant use in condition 
+                ex ; if date :
+                       pass   ===>>>> wrong
+               add to 9,10,11 chapter tomorrow (pending)
+
+ 6) what is _ in odoo(in exceptions)
+
+
+ 7) NoneType NonSubscriptable
+    ans : select the database again ,it will may be work for you 
+
+
+ 8) learn sequence
+
+9) how to add multiple condition for one decoration ex : offer received and offer accepted shown in green color
+   solved
+
+
+10) filter domain  ==>>> solved
+ 
+important link ;
+  https://www.odoo.com/forum/help-1/optional-parameter-fields-property-20642
+
+
+11) stat button 
+ https://amirul-m.medium.com/how-i-create-smart-button-3f58bb044362
+
+
+12) view inheritance for res.users
+    https://www.odoo.com/forum/help-1/how-can-i-inherit-res-users-58647
+
+
+<xpath expr="//page[@name='preferences']" position="after">
+				<field name="property_ids"/>
+			</xpath>
+
+
+
+
+
+
+<notebook position="inside">
+				<page string="Real Estate Properties" >
+				<group>
+					<field name="property_ids" />
+					
+				</group>
+				</page>
+			
+			</notebook>
+
+not working :
+   	<xpath expr="//page[@name='preferences']" position="replace">
+				<page string="Real Estate Properties" >
+				<group>
+					<field name="property_ids" />
+					
+				</group>
+				</page>
+			
+			</xpath>
+
+
+
+
+
+13 ) study more about odoo inheritance
+
+
+
+  
+    @api.depends("status")
+    def _compute_color(self):
+        if self.status == "new" :
+            self.color = 4
+        elif self.status == "offer received" :
+            self.color = 2
+        elif self.status == "offer accepted" :
+            self.color = 10
+        elif self.status == "canceled" :
+            self.color = 9
+        else :
+            self.color = 3
+        
