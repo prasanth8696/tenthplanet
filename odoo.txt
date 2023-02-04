@@ -1,0 +1,9 @@
+chaper ===> 5
+ir.model.access.csv =>>> model_id prefix is 'model'
+  ex : model name is =>>> estate_property_five 
+       specified in csv file model_estate_property_five
+
+chapter ===> 6
+
+  create action and xml file
+  action =>>> connect menu to model

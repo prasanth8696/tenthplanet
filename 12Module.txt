@@ -1,0 +1,21 @@
+list the order :
+
+in 3 ways :
+ 1) model
+ 2) view
+ 3) manual
+
+
+1) models :
+   using order by method use _order keyword in models it will internally coverted to order by 
+   ex : _order = "id DESC"
+
+2) view :
+   attr ==>>> default_order = "id desc"
+    ex :
+     <tree default_order = "id desc">
+       <field name = "name" />
+     </tree>
+
+ 3) manual :
+    define squence field manually in the specific model and sort based on that
