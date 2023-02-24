@@ -1,1 +1,10 @@
 how to add available filter in search view....
+
+
+pending...
+
+inheritance overide method...
+
+stat button
+
+tax remove

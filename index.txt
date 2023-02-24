@@ -1,0 +1,541 @@
+<!doctype html>
+<html>
+	<head>
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+	<style>
+
+		.row {
+			padding: 2px
+		}
+
+		.table_1 tr {
+			border: 1px dotted lightgreen;
+			
+		}
+		
+		.table_1 th {
+			text-align: center;
+			border-top: 2px solid darkblue;
+			border-bottom: 2px solid darkblue;
+			border-right: 1px dotted lightgreen;
+			background-color: #C2DFFF;
+			padding: 3px 3px 3px 10px
+		}
+		
+		.table_1 td {
+			text-align: right;
+			border-right: 1px dotted lightgreen;
+			padding: 10px 20px
+		}
+
+		.table_2 th {
+			font-size: 15px;
+			padding: 3px 60px 3px 10px;
+			border-bottom: 1px solid green;
+			
+
+
+		}
+
+
+		#address {
+			padding-left: 1px;
+			margin: 10px 10px 10px 1px
+		}
+
+		.column-1 {
+			padding-left: 250px
+		}
+
+		.column-2 {
+			padding-left: 5px
+		} 
+
+		
+
+	</style>
+
+
+	</head>
+
+
+	<body>
+
+		<div class="container">
+			<div class="row">
+				<div class="col-1">
+					<img id="logo" src="pothys.png" alt="your logo" width="60" height="60">
+				</div>
+
+				<div class='col-3'>
+
+					<p id="address"> Pothys private limited <br> 400,Anna Salai, <br> pudhucherry <br>pondy </p>
+				</div>
+			</div>
+		</div>
+
+
+		<h3 style="text-align: center;text-decoration: underline solid  green 3px">GOODS RECEIPT NOTE </h3>
+		<br><br>
+
+		<div class="container">
+
+
+			<div class="row">
+                                <div class="col-2 offset-7">
+                                        <strong style="font-size: 25px; padding-left: 6px;">Credit days : </strong>
+                                        <span style="font-size: 25px;text-align: right">30</span>
+                                </div>
+                        </div>
+
+
+			<div class="row">
+				<div class="col-5">
+					<strong class="column-1">Vendor :  </strong>
+					<span class="column-2"> LAXMI PLASTICS </span>
+				</div>
+				<div class="col-2 offset-1">
+					<strong>Bill No    :  </strong>
+                                        <span class="column-2">15456</span>
+				</div>
+				<div class="col-3 offset-1">
+					<strong>Gross Amt  :  </strong>
+					<span class="column-2">49,295.13</span>
+
+                                </div>
+
+			</div>
+
+
+				 <div class="row">
+                                <div class="col-5">
+                                        <strong class="column-1"></strong>
+                                        <span class="column-2"></span>
+                                </div>
+                                <div class="col-2 offset-1">
+                                        <strong>Bill Date: </strong>
+                                        <span class="column-2">08/02/2023</span>
+                                </div>
+                                <div class="col-3 offset-1">
+                                        <strong>Tax Amt : </strong>
+                                        <span class="column-2" >6,743.12</span>
+
+                                </div>
+
+			</div>
+
+
+				 <div class="row">
+                                <div class="col-5">
+                                        <strong class="column-1"> </strong>
+                                        <span class="column-2"></span>
+                                </div>
+                                <div class="col-2 offset-1">
+                                        <strong>GRN No : </strong>
+                                        <span class="column-2">GR22/23_21744</span>
+                                </div>
+                                <div class="col-3 offset-1">
+                                        <strong>CD total : </strong>
+                                        <span class="column-2">0.00</span>
+
+                                </div>
+
+			</div>
+
+				 <div class="row">
+                                <div class="col-5">
+                                        <strong class="column-1">Code : </strong>
+                                        <span class="column-2">1000336</span>
+                                </div>
+                                <div class="col-2 offset-1">
+                                        <strong>GRN Date: </strong>
+                                        <span class="column-2" >08/02/2023</span>
+                                </div>
+                                <div class="col-3 offset-1">
+                                        <strong>Add/Ded : </strong>
+                                        <span class="column-2">-0.25</span>
+
+                                </div>
+
+			</div>
+
+			 <div class="row">
+                                <div class="col-5">
+                                        <strong class="column-1">GSTIN NO : </strong>
+                                        <span class="column-2">34BWCPDI244G1Z5</span>
+                                </div>
+                                <div class="col-2 offset-1">
+                                        <strong>CreatedBy : </strong>
+                                        <span class="column-2">PRASHANTH</span>
+                                </div>
+                                <div class="col-2 offset-1">
+                                        <strong>Addnl Amt : </strong>
+                                        <span class="column-2">0.00</span>
+
+                                </div>
+			</div>
+
+			<div class="row">
+                                <div class="col-5">
+                                        <strong class="column-1">Phone</strong>
+                                        <span class="column-2">684025693</span>
+                                </div>
+                                <div class="col-2 offset-1">
+                                        <strong >PO NO : </strong>
+                                        <span class="column-2">15946</span>
+                                </div>
+                                <div class="col-2 offset-1">
+                                        <strong >TCS Amount : </strong>
+                                        <span class="column-2">0.00</span>
+
+                                </div>
+			</div>
+
+				 <div class="row">
+                                <div class="col-5">
+                                        <strong class="column-1"></strong>
+                                        <span class="column-2"></span>
+                                </div>
+                                <div class="col-2 offset-1">
+                                        <strong>PO Date : </strong>
+                                        <span class="column-2"> </span>
+                                </div>
+                                <div class="col-2 offset-1">
+					<strong>Bill Disc Amt : </strong>
+                                        <span class="column-2">0.00</span>
+
+                                </div>
+			</div>
+
+			<div class="row">
+				<div class="col-2 offset-6">
+					<strong>Created : </strong>
+					<span class="column-2">28/02/2023 13:23:48 </span>
+				</div>
+			</div>
+
+			<div class="row">
+                                <div class="col-2 offset-9">
+                                        <strong style="font-size: 20px">GRN Total :  </strong>
+                                        <span class="column-2">56,038.00</span>
+
+                                </div>
+			</div>
+
+			<div class="row">
+				<div class="col-2 offset-6">
+					<strong>IRN NO : </strong>
+					<span></span>
+				</div>
+			</div>
+
+		</div>
+		<br><br>
+
+		<div class="container table_2" style="margin-bottom: 30px; padding:10px 10px 10px 50px">
+
+			<table >
+				<thead>
+					<tr>
+						<th>Tax </th>
+                                                <th>HSN Code </th>
+                                                <th>Qty </th>
+                                                <th>Taxable </th>
+                                                <th>CGST </th>
+                                                <th>SGST</th>
+                                                <th>IGST</th>
+                                                <th>CESS</th>
+                                                <th>Tax Total</th>
+                                                <th>Addnl Amt </th>
+						<th>CD Amt </th>
+						<th>LC Amt </th>
+
+					</tr>
+				</thead>
+
+				<tbody>
+					<tr style="border-bottom: 3px dotted green;">
+						<td>CGST/SGST 12%</td>
+						<td>630510</td>
+						<td>50</td>
+						<td>35,500.00</td>
+						<td>2130.00</td>
+						<td>2130.00</td>
+						<td>0.00</td>
+						<td>0.00</td>
+						<td>4260.00</td>
+						<td></td>
+						<td>0.00</td>
+						<td>39760.00</td>
+					</tr>
+
+					<tr>
+                                                <td>CGST/SGST 12%</td>
+                                                <td>630510</td>
+                                                <td>50</td>
+                                                <td>35,500.00</td>
+                                                <td>2130.00</td>
+                                                <td>2130.00</td>
+                                                <td>0.00</td>
+                                                <td>0.00</td>
+                                                <td>4260.00</td>
+                                                <td></td>
+                                                <td>0.00</td>
+                                                <td>39760.00</td>
+                                        </tr>
+
+					<tr style="border-bottom: 3px dotted green">
+                                                <td>CGST/SGST 12%</td>
+                                                <td>630510</td>
+                                                <td>50</td>
+                                                <td>35,500.00</td>
+                                                <td>2130.00</td>
+                                                <td>2130.00</td>
+                                                <td>0.00</td>
+                                                <td>0.00</td>
+                                                <td>4260.00</td>
+                                                <td></td>
+                                                <td>0.00</td>
+                                                <td>39760.00</td>
+                                        </tr>
+
+					<tr>
+                                                <td>CGST/SGST 12%</td>
+                                                <td>630510</td>
+                                                <td>50</td>
+                                                <td>35,500.00</td>
+                                                <td>2130.00</td>
+                                                <td>2130.00</td>
+                                                <td>0.00</td>
+                                                <td>0.00</td>
+                                                <td>4260.00</td>
+                                                <td></td>
+                                                <td>0.00</td>
+                                                <td>39760.00</td>
+                                        </tr>
+
+
+
+			</table>
+		</div>
+
+
+
+
+
+
+
+
+		<div class="container table_1">
+			<table style="border-bottom: 2px solid darkblue;padding: 10px;">
+				<thead>
+					<tr>
+						<th>N  </th>
+						<th>Code </th>
+						<th>Product   </th>
+						<th>Qty </th>
+						<th>Free </th>
+						<th>BCost</th>
+						<th>D amt </th>
+						<th>SDAm </th>
+						<th>TaxA</th>
+						<th>Tax </th>
+						<th>CDA </th>
+						<th>CHSS </th>
+						<th>LCost </th>
+						<th>PL cos </th>
+						<th>Sp% </th>
+						<th>MRP </th>
+						<th>PMRP</th>
+						<th>Margi</th>
+						<th>Total </th>
+						
+						
+						
+						
+					</tr>
+				</thead>
+
+				<tbody>
+					<tr>
+						<td>1</td>
+						<td>16051</td>
+						<td>420211</td>
+						<td>23</td>
+						<td>0</td>
+						<td>599.79</td>
+						
+						<td>934</td>
+						<td>24450</td>
+						<td>234</td>
+						<td>330</td>
+						<td>300</td>
+						<td>0.00</td>
+						<td>0.00</td>
+						<td>0.00</td>
+						<td>0.00</td>
+						<td>0.00</td>
+						<td>0.00</td>
+						<td>0.00</td>
+					</tr>
+
+					<tr>
+                                                <td>1</td>
+                                                <td>16051</td>
+                                                <td>420211</td>
+                                                <td>23</td>
+                                                <td>0</td>
+                                                <td>599.79</td>
+
+                                                <td>934</td>
+                                                <td>24450</td>
+                                                <td>234</td>
+                                                <td>330</td>
+                                                <td>300</td>
+                                                <td>0.00</td>
+                                                <td>0.00</td>
+                                                <td>0.00</td>
+                                                <td>0.00</td>
+                                                <td>0.00</td>
+                                                <td>0.00</td>
+                                                <td>0.00</td>
+                                                <td>0.00</td>
+
+                                        </tr>
+
+					<tr>
+                                                <td>1</td>
+                                                <td>16051</td>
+                                                <td>420211</td>
+                                                <td>23</td>
+                                                <td>0</td>
+                                                <td>599.79</td>
+
+                                                <td>934</td>
+                                                <td>24450</td>
+                                                <td>234</td>
+                                                <td>330</td>
+                                                <td>300</td>
+                                                <td>0.00</td>
+                                                <td>0.00</td>
+                                                <td>0.00</td>
+                                                <td>0.00</td>
+                                                <td>0.00</td>
+                                                <td>0.00</td>
+                                                <td>0.00</td>
+                                                <td>0.00</td>
+
+                                        </tr>
+
+
+				</tbody>
+			</table>
+
+		</div>
+
+		<br>
+
+		<div class="container">
+
+			<div class="row">
+				<div class="col-3">
+					<strong>Basic Amt : </strong>
+					<span>49,295.1263 </span>
+				</div>
+
+				<div class="col-3">
+                                        <strong>Disc Amt : </strong>
+                                        <span>0.00 </span>
+                                </div>
+
+				<div class="col-3">
+                                        <strong>SD Amt : </strong>
+                                        <span>0.00 </span>
+                                </div>
+
+				<div class="col-3">
+                                        <strong>Cross Amt : </strong>
+                                        <span>49,295.13 </span>
+                                </div>
+			</div>
+
+
+			 <div class="row">
+                                <div class="col-3">
+					<strong>Tax Amt : </strong>
+                                        <span>6,743.12 </span>
+                                </div>
+
+                                <div class="col-3">
+                                        <strong>CD Amt : </strong>
+                                        <span>0.00 </span>
+                                </div>
+
+                                <div class="col-3">
+					<strong>CESS Amt : </strong>
+                                        <span>0.00 </span>
+                                </div>
+
+                                <div class="col-3">
+                                        <strong>T.Payable : </strong>
+                                        <span>56,038.00 </span>
+                                </div>
+                        </div>
+
+			<div class="row">
+                                <div class="col-3">
+                                        <strong>Freight Charges: </strong>
+                                        <span>6,743.12 </span>
+                                </div>
+
+                                <div class="col-3">
+                                        <strong>TCS Amount : </strong>
+                                        <span>0.00 </span>
+                                </div>
+
+                                <div class="col-3">
+                                        <strong>Bill Disc Amt : </strong>
+                                        <span>0.00 </span>
+                                </div>
+
+
+				<br><br>
+
+				<h3 style="margin: 30px 10px">Rmarks </h3> <br>
+
+
+				<div class="row" style="margin: 30px 10px">
+					<div class="col-4">
+						<strong>ENTRY BY </strong>
+					</div>
+
+					 <div class="col-4 text-center">
+                                                <strong>VERIFIED BY </strong>
+                                        </div>
+
+					 <div class="col-4 text-end">
+                                                <strong>APPROVED BY </strong>
+                                        </div>
+
+
+                        </div>
+
+
+
+
+
+
+
+
+
+
+		<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
+
+
+		<script src="myscript.js"> </script>
+	</body>
+
+</html>
+

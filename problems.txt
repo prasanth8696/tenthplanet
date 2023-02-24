@@ -1,85 +1,65 @@
-module 8 :
- 1) why menuitem not shown in the ui????
-    ans : in odoo security is very important so you must give access rights to your model as well as your menus also . check the ir.model.access.csv 
+module 8 : 1) why menuitem not shown in the ui???? ans : in odoo security is very important so you must give access rights to your model as 
+    well as your menus also . check the ir.model.access.csv
          file make sure that model hava proper rights..(very important =>>> ir.model.access.csv id must be unique...)
 
-    extra link : https://www.odoo.com/forum/help-1/menu-item-is-not-showing-in-existing-module-120971 
+    extra link : https://www.odoo.com/forum/help-1/menu-item-is-not-showing-in-existing-module-120971
 
 
- 2) external Id not found in the system???? 
-    Ans : it is the one type of exception. xml files and other data files are loaded sequentily so you must load in the proper way.
+ 2) external Id not found in the system???? Ans : it is the one type of exception. xml files and other data files are loaded sequentily so you 
+    must load in the proper way.
           ex : car model depend on driver you first load the driver files then load the car miles..
 
 
 
- 3) cannot access the module by admin but super user can...???? :
-    ans : add your ir.model.access.csv file ti __manifest__ file...
+ 3) cannot access the module by admin but super user can...???? : ans : add your ir.model.access.csv file ti __manifest__ file...
 
 
- 4) self recordset 
+ 4) self recordset
 
 
- 5) inverse computation doesnt invoke???? ===>>> solved....
-     mistake : 1) create_date is datetime format but our dead line format  is date format
-               2) you cannot convert datetime format to boolean so cant use in condition 
-                ex ; if date :
-                       pass   ===>>>> wrong
-               add to 9,10,11 chapter tomorrow (pending)
+ 5) inverse computation doesnt invoke???? ===>>> solved.... mistake : 1) create_date is datetime format but our dead line format is date 
+     format
+               2) you cannot convert datetime format to boolean so cant use in condition ex ; if date : pass ===>>>> wrong add to 9,10,11 
+               chapter tomorrow (pending)
 
  6) what is _ in odoo(in exceptions)
 
-
- 7) NoneType NonSubscriptable
-    ans : select the database again ,it will may be work for you 
+problems.txt 7) NoneType NonSubscriptable ans : select the database again ,it will may be work for you
 
 
  8) learn sequence
 
-9) how to add multiple condition for one decoration ex : offer received and offer accepted shown in green color
-   solved
+9) how to add multiple condition for one decoration ex : offer received and offer accepted shown in green color solved
 
 
-10) filter domain  ==>>> solved
+10) filter domain ==>>> solved
  
-important link ;
-  https://www.odoo.com/forum/help-1/optional-parameter-fields-property-20642
+important link ; https://www.odoo.com/forum/help-1/optional-parameter-fields-property-20642
 
 
-11) stat button 
- https://amirul-m.medium.com/how-i-create-smart-button-3f58bb044362
+11) stat button https://amirul-m.medium.com/how-i-create-smart-button-3f58bb044362
 
 
-12) view inheritance for res.users
-    https://www.odoo.com/forum/help-1/how-can-i-inherit-res-users-58647
+12) view inheritance for res.users https://www.odoo.com/forum/help-1/how-can-i-inherit-res-users-58647
 
 
-<xpath expr="//page[@name='preferences']" position="after">
-				<field name="property_ids"/>
-			</xpath>
+<xpath expr="//page[@name='preferences']" position="after"> <field name="property_ids"/> problems.txt </xpath>
 
 
 
 
 
 
-<notebook position="inside">
-				<page string="Real Estate Properties" >
-				<group>
-					<field name="property_ids" />
+<notebook position="inside"> <page string="Real Estate Properties" > <group> <field name="property_ids" />
 					
-				</group>
-				</page>
+				</group> </page>
 			
 			</notebook>
 
-not working :
-   	<xpath expr="//page[@name='preferences']" position="replace">
-				<page string="Real Estate Properties" >
-				<group>
-					<field name="property_ids" />
+not working : <xpath expr="//page[@name='preferences']" position="replace"> <page string="Real Estate Properties" > <group> <field 
+					name="property_ids" />
 					
-				</group>
-				</page>
+				</group> </page>
 			
 			</xpath>
 
@@ -92,16 +72,82 @@ not working :
 
 
   
-    @api.depends("status")
-    def _compute_color(self):
-        if self.status == "new" :
-            self.color = 4
-        elif self.status == "offer received" :
+    @api.depends("status") def _compute_color(self): if self.status == "new" : self.color = 4 elif self.status == "offer received" : 
             self.color = 2
-        elif self.status == "offer accepted" :
-            self.color = 10
-        elif self.status == "canceled" :
-            self.color = 9
-        else :
-            self.color = 3
+        elif self.status == "offer accepted" : self.color = 10 elif self.status == "canceled" : self.color = 9 else : self.color = 3
         
+
+
+
+chapter 14 : links : https://www.odoo.com/forum/help-1/create-automatic-journal-account-move-more-than-1-account-move-line-163271
+   
+   https://www.odoo.com/forum/help-1/how-to-insert-value-to-a-one2many-field-in-table-with-create-method-28714?forum=forum.forum%281%2C%29&question=forum.post%2828714%2C%29
+
+
+chapter 15 : https://www.odoo.com/documentation/16.0/developer/reference/frontend/qweb.html#reference-qweb
+
+   
+
+
+pdf report generation : error1 ==>>> model_id should start with "model_" ex : model name => estate_property_fifteen you should give 
+    model_estate_property_fifteen
+
+   error 2 : dont give space in xml content
+
+   error 3 : giveprint report name in quates beacause it will validated by python
+
+
+
+demo data link : https://github.com/odoo/technical-training-solutions/blob/16.0-K_dashboard/estate/data/estate_demo.xml
+
+
+
+self.env documentation : https://odoo-new-api-guide-line.readthedocs.io/en/latest/environment.html#environment
+
+
+
+DATABASE_URL=postgres://{user}:{password}@{hostname}:{port}/{database-name}
+
+
+domain : error : string out of range or token error(progran expects tuble or list) but you give in string ans : must use tuple in condition
+
+
+report generation : https://www.odoo.com/forum/help-1/how-to-call-report-action-from-method-or-inside-method-17159
+
+
+
+
+excel report generation : https://www.odoo.com/forum/help-1/how-can-we-generate-excel-report-using-a-button-141052
+
+  xlwt : related link
+
+    https://toricode.com/python-xlwt-set-excel-column-width/
+    
+    https://www.cybrosys.com/blog/how-to-manipulate-excel-reports-in-odoo
+
+   border related : https://bytes.com/topic/python/answers/876543-xlwt-borders-type
+
+
+new widgets : https://www.cybrosys.com/blog/new-widgets-odoo-13
+
+
+
+flush vs commit : =>>> commit make real chnages
+
+   =>>> flush make visible the current transaction to other transactions
+
+    ex : i create one user using odoo orm or sqlalchemy or something ,all orm have own cache if you create the one user it will still cache 
+      only if you want make visible to other transcation use flush (most orm using auto flush if not you must do flush()).but flush doesnt 
+      make real in disk... you can rollback in after flush state but after commit you cant
+
+    related links : https://stackoverflow.com/questions/4201455/sqlalchemy-whats-the-difference-between-flush-and-commit
+
+
+ERROR: current transaction is aborted, commands ignored until end of transaction block SQL state: 25P02 :
+
+   if previous transaction get error ,probably you will get this error just rollback your transaction
+
+
+   related links : 
+     https://dba.stackexchange.com/questions/303935/error-current-transaction-is-aborted-commands-ignored-until-end-of-transaction
+

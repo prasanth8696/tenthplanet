@@ -1,0 +1,43 @@
+
+
+<header>
+					<button name="ship_order" string="ship" type="object"
+						attrs="{'invisible' : ['|',('status', '=', 'shipped'),('status', '=',  'canceled'),('status', '=',  'delivered')]}" />
+					<button name="cancel_order" string="cancel" type="object" 
+						attrs="{'invisible' : ['status' in ('shipped','canceled','delivered')]}" />
+					<field name="status" widget="statusbar"
+						statusbar_visible="confirmed,shipped,delivered" />
+
+				</header>
+
+
+
+
+<sheet>
+					<div>
+						<label for="order_id" string="Order Id" />
+						<h1 class="mb32">
+							<field name="order_id" class="mb16" />
+						</h1>
+					</div>
+
+					<group>
+						<group>
+							<field name="product_id"
+								options="{'no_create': True, 'no_open': True}" />
+							<field name="customer" />
+							<field name="creation_date" />
+						</group>
+						<group>
+							<field name="expected_date" />
+							<field name="delivery_date" />
+							<field name="quantity" />
+							<field name="total_amt" />
+				
+						</group>
+					
+					</group>
+				</sheet>
+			</form>
+		</field>
+	</record>
