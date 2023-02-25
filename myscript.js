@@ -66,3 +66,5 @@ function load(){
 		xhttp.send();
 
 }
+
+
