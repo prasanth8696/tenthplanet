@@ -151,3 +151,11 @@ ERROR: current transaction is aborted, commands ignored until end of transaction
    related links : 
      https://dba.stackexchange.com/questions/303935/error-current-transaction-is-aborted-commands-ignored-until-end-of-transaction
 
+
+
+
+css flex box related isssue in odoo :
+  related links :
+   https://github.com/wkhtmltopdf/wkhtmltopdf/issues/1522
+
+   https://stackoverflow.com/questions/57020675/using-flex-css-with-wkhtmltopdf

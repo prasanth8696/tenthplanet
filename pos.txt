@@ -1,0 +1,169 @@
+POS =>>> point of sale :
+
+
+    pos =>> it is used for sell the product in offline or online 
+
+
+
+Initial config :
+   product availability : 
+      if you want one product available in pos enable "available in POS " = True
+
+      path =>>> products =>>> product.template =>>> sales(product form > notebook)
+   
+  payment_methods :
+     path =>>> pos =>>> configuration =>>> payment methods
+  
+     fields :
+       name : name of the payment method(mandatory)
+       journal: select the journal
+           cash =>>> for cash payments
+           bank =>>>  for card payments
+           if you choose bank journal odoo will show terminal selection option
+            
+           (its a relational field model name =>>> account.journal)
+
+        identify customer : (boolean)
+           if it is true whenever use this this method ,odoo will force the cashier to choose  the customer
+
+
+
+    sessions :
+ 	path =>>> dashboard =>> new session  or continue session =>>> sell products
+
+
+    REFUND :
+      Return and refund products :
+    stepts :
+          
+
+    start a session from the POS dashboard;
+
+    click Refund and select the corresponding order;
+
+    select the product and the quantity to refund using the keypad;
+
+    click Refund to go back to the previous screen;
+
+    once the order is completed, click Payment to proceed to the refund;
+
+    click Validate and New Order to move on to the next customer.
+     
+    
+   close session :
+    once finihsed all sales click close session and count the cash or you can use backend option 
+
+
+
+  registred customers :
+     if you have registerd customer you can give like points related discounts,loyalty,odoo allows you to select ans create the customer in pos.
+    path =>> take new order >> select customer || create customer >> validate >> payment
+
+
+ invoice :
+    in payment screen you can generate invoice but you must select the registerd customer for that..
+  
+    * you can also genearte invoice in >> pos>> orders >> order form >> invoice
+  
+    * you can see invoiced status in status field...
+
+
+    QR code invoice:
+      you can also generate the qr code in the bill to allow the customer to request the invcoice using qr code
+
+    to use this feature  enable Use QR code on ticket :
+        path: pos >> configuration >> settings >> point of sale >> use QR code on ticket (boolean field)
+
+
+
+   barcodes :
+    Using a barcode scanner to process point-of-sale orders improves your efficiency in providing quicker customer service. Barcode scanners can be used both to scan products or to log employees into a POS session.
+
+
+  to use this feature  enable borcode scanner in inventory app :
+    path: inventory >> configuration >> settings >> enable barcode scanner 
+
+   then goto product form and add barcode number 
+
+
+   * if you scan the barcode of the product it will automatcally add the products in pos line or you can click qty option then change the qty you want
+
+   * or you can manually enter the barcode then add your product...
+
+   * employee login :
+       you can control the employee login using barcode using badge or you can use pin.
+      path: employee >> select the employee >> add barcode or pin number.
+
+
+
+ SALE ORDER IN POS :
+   ODOO pos is fully integrated with sales module here you can create the quoatation/sale order or settle the payments (
+	  1) down payment >> how much percent customer want to pay 
+          2) settle the order >> settle the order fully
+
+    depends_on: sale
+
+ 
+LOGIN WITH EMPLOYEE :
+  ODOO allows you manage mutiple cashier in one pos to use this feature :  
+
+    path: pos >> settings >> pos >> select shop >> enable login with employee >> then add your employees 
+
+   * you can switch employees inside pos also simply enter the pin code or scan badge 
+
+   * when close the session you can see list of casier selling amt and no of orders
+
+   so you can easily know particular casier how much saled...
+
+
+
+ RECEIPTS :
+   you can also generate receipts once payment registered  :
+
+   path: pos >> configuration >> settings >> receipts and billing >> enable automatic bill receipt 
+
+   you can also reprint the receipt goto orders inside session and select paid in the dropdown and filter the order and generate the receipts
+
+   you can also set the custom header and footer  in order to do that go to foloowing path :
+    path: pos >> configuration >> settings >> enable custom header and footter and set the custom header and footer 
+
+     
+ CASH ROUNDING :
+     doubt...
+
+ SERIAL NUMBERS AND LOTS:
+   doubt...
+
+
+ Restaurent Features :
+   Restaurants have specific needs that shops don’t have. That’s why Odoo gives restaurant owners several unique features to help them manage their 
+   business in the best possible way.
+
+
+    to activate bar/res** => enable bar option in settings...
+
+   manage your tables:
+      enable floor in in setting ssection :
+      path: pos >> configuration >> settings >> pos >> select shop( bar/res** = True) >> enable Floors & Tables Map
+
+      * once enable the floors add the floor in restarent.floor and dont forget to assign floor to shop...
+
+      * after succesful creation of floors then we can create tables ,in order to create tables we have two ways,
+          1) restarent.floor view (here we can create tables with appropriate values)
+          2) inside pos session (very much flexible way throuth UI manipulation)
+
+     REGISTER ORDER FOR TABLES :
+        same as normal pos shop --] just select the table and register orders
+
+     Transfer customers :
+       once order the products  after that change the table odoo provides transfer option simply click the transfer button and select the table you want and done...
+
+
+   BILL SPLITTING :   
+ 
+
+     
+
+
+
+
