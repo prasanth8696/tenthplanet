@@ -68,3 +68,19 @@ function load(){
 }
 
 
+function onload() {
+
+	const xhttp = new XMLHttpRequest()
+
+        xhttp.onload = function() {
+          if(this.status == 200){
+       let text =  this.responseText
+
+       document.write(text);
+}
+}
+
+xhttp.open('GET','https://home/auth/data',true)
+xhttp.send()
+
+}

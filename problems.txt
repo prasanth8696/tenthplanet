@@ -159,3 +159,8 @@ css flex box related isssue in odoo :
    https://github.com/wkhtmltopdf/wkhtmltopdf/issues/1522
 
    https://stackoverflow.com/questions/57020675/using-flex-css-with-wkhtmltopdf
+
+
+move_ids and move_ids_without_package
+
+  https://www.odoo.com/forum/help-1/difference-between-move-line-ids-and-move-line-nosuggest-ids-191235

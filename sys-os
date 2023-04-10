@@ -1,5 +1,8 @@
+#!/usr/bin/python3
+
 import os
 import sys
+import json
 from pprint import pprint
 
 help = '''
@@ -10,6 +13,12 @@ help = '''
   -e extension
 
 '''
+def insertStr(positions:list,str:str) -> str :
+  liststr = [char for char in str  ]
+ 
+  liststr.insert(positions[0],'\033[92m')
+  liststr.insert(positions[1]+1,'\033[0m')
+  return ''.join(liststr)
 
 def deleteFiles(extension) :
    count = 0
@@ -27,11 +36,14 @@ def findFiles(keyword,curDir) :
    for dirpath,dirname,filenames in os.walk(curDir):
       for file in filenames :
           if (file.find(keyword) >= 0) :
-              if len(files_dict) > 10 :
-                  return files_dict
-              files_dict[file] = os.path.join(dirpath,file)
-      for name in dirname :
-        findFiles(keyword,os.path.join(dirpath,name))
+             #for keyword color formatting
+              index = file.find(keyword)
+              formatted_file = insertStr([index,index+len(keyword)],file)
+              files_dict[formatted_file] = os.path.join(dirpath,file)
+
+              with open('result.json','w') as fi :
+                   json.dump(files_dict,fi,indent=2)
+#   return json.dumps(files_dict, indent=2)
    return files_dict
 
 def clearFile() :
@@ -88,7 +100,12 @@ def findFile() :
       raise ValueError
 
     List = findFiles(keyword,curPath)
-    pprint(List)
+    if not List :
+      print('String Not Found...')
+      exit()
+    print('filename','        ','filePath')
+    for file,path in List.items() :
+      print(file,' ==>>> ',path)
 
   except FileNotFoundError :
     print('Invalid path...') 
@@ -96,18 +113,21 @@ def findFile() :
   except ValueError :
     print('please provide keyword to search...')
 
- # except :
-#    print('something went wrong...')
+  except Exception as e :
+    print('something went wrong...')
 
 
+def main() :
+  param_list = list(sys.argv)
 
-param_list = list(sys.argv)
+  if ('-c' in param_list) :
+     clearFile()
+  elif('-f' in param_list) :
+     findFile()
+  else :
+     print('operation not found use -f for find or -c clear the files')
+     print(help)
 
 
-if ('-c' in param_list) :
-   clearFile()
-elif('-f' in param_list) :
-   findFile()
-else :
-   print('operation not found use -f for find or -c clear the files')
-   print(help)
+if __name__ == '__main__' :
+   main()
