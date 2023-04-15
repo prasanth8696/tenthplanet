@@ -1,0 +1,18 @@
+{
+   name : "AYYAPPAN",
+   age : 21,
+   college : "college of engineering",
+   degree : "B.E",
+    is_passed_out : true
+
+}
+{ 
+   name : "SRINIVAS",
+   age : 22,
+   college : "SDTN",
+   degree : "B.E", 
+    is_passed_out : true
+
+}
+
+
