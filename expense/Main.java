@@ -1,5 +1,6 @@
 import java.util.Scanner;
 import java.util.TreeSet;
+import java.util.Iterator;
 public class Main{
 
 	public static void main(String[] args){
@@ -14,7 +15,7 @@ public class Main{
 			int amount = sc.nextInt();
 
 			expenses.add(new Expense(category,amount));
-		
+		        System.out.println("Do you want to continue?yes/no");
 			String in = sc.next().toLowerCase();
 			if(in.equals("yes"))
 				continue;
@@ -25,13 +26,13 @@ public class Main{
 		}
 
     		Iterator<Expense> it = expenses.descendingIterator();
-		int total_amount = 0
+		int total_amount = 0;
 
 		System.out.println("Category           Amount");
 		while(it.hasNext()){
 			Expense expense = it.next();
-                        System.out.println(expense.category + "           " + expense.amount);
-                        total_amount += expense.amount;
+                        System.out.println(expense.getCategory() + "           " + expense.getAmount());
+                        total_amount += expense.getAmount();
 		}
 		
 
