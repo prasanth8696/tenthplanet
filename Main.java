@@ -1,6 +1,7 @@
 import java.util.Scanner;
 import java.util.ArrayList;
 import java.util.HashSet;
+import java.util.Iterator;
 public class Main{
 	static HashSet<User> userSet = new HashSet<User>();
 	static ArrayList<User> userList = new ArrayList<User>();
@@ -36,19 +37,19 @@ public class Main{
 	}
 
 	public static void retainAll(){
-		for( User setUser : userSet){
-                        boolean activeUser = true;
+		Iterator<User> it = userSet.iterator();
+		while(it.hasNext() ){
+			User setUser = it.next();
+                        boolean activeUser = false;
 			for(User listUser : userList){
 				if (setUser.equals(listUser)){
 					activeUser = true;
 					break;
 				}
-				else{
-					activeUser = false;
-				}
 			}
-			if(activeUser == false)
-				userSet.remove(setUser);
+			if(! activeUser) 
+				it.remove();
+			
 
 		}
 
