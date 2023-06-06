@@ -164,3 +164,9 @@ css flex box related isssue in odoo :
 move_ids and move_ids_without_package
 
   https://www.odoo.com/forum/help-1/difference-between-move-line-ids-and-move-line-nosuggest-ids-191235
+
+
+why onchange fucntion not triggered when changes are made in python code
+  ans : onchange only triggered in the form view(client side)
+
+   https://www.odoo.com/forum/help-1/onchange-not-triggered-when-record-is-altered-from-python-code-196159

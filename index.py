@@ -52,7 +52,7 @@ def create_session(user_id) :
 
 def validate_session(session_id) :
   print(session_id)
-  ses = session.query(SessionData).filter(SessionData.id == session_id).first()
+  ses = session.query(SessionData).filter(SessionData.id == session_id.strip()).first()
   print(ses)
 
   if not ses :
