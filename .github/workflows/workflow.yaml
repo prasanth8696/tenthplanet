@@ -1,0 +1,16 @@
+
+name: workflow1
+
+
+on:
+  - push
+
+jobs:
+  started:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout repo
+        uses: actions/checkout@v2
+
+      - name: print files
+        run: ls -l
