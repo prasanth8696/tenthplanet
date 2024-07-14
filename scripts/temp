@@ -1,0 +1,7 @@
+#!/bin/bash
+read -p "Enter USERNAME: " targetUser
+server="4.206.132.16"
+
+#users=$(ssh shan@${server} "cat /etc/passwd | awk -F ':' {print \$1}'")
+
+echo $users
